@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+  <meta name="description" content="A simple Rock, Paper, Scissors Game where players compete against a bot.">
+
+
+  <title>Rock-Paper-Scissors Game</title>
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  
+  
+  <!-- Fonts -->
+  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Lobster&family=Merriweather+Sans:ital,wght@1,500&family=Montserrat+Alternates&family=Nunito&family=Sacramento&family=Ubuntu:ital,wght@0,300;0,500;1,300;1,500&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+ 
+   <!-- Landing Page -->
+   
+   <div class="landing-page">
+    
+   <div class="rockPaperScissors"> 
+    <h3>ROCK</h3>
+    <h3>PAPER</h3>
+    <h3>SCISSORS</h3>
+    </div>
+    
+    <div class="input-div">
+    <h5>Input Your Name To Continue</h5>
+    
+    <input onkeyup="validInput();" onkeydown="clearThrowText();" class="input-tag" type="text" placeholder="Enter Name Here..">
+    </div>
+    
+    <p class="throw-text"></p>
+    <p class="throw-text-two"></p>
+    
+    
+    <button class="start-game">Start Game</button>
+    
+    
+   </div>
+   
+   <!-- Rock-Paper-Scissors Page -->
+   
+     <div class="main-container">
+      
+      <div class="sub-container">
+      
+      <div class="bot-div">
+       
+       <h3 class="bot-name">Bot</h3>
+       
+       <div class="bot-choice">
+        
+       </div>
+       
+       <p class="botScore-tag"><span class="bot">Bot</span>: 0</p>
+       
+      </div>
+      
+      <p class="result-pTag">Rock, Paper or Scissors?</p>
+      
+      <div class="player-div">
+       
+       <h3 class="player-name"> Bot </h3>
+       
+       <div class="player-choice">
+        
+       </div>
+       
+       <p class="playerScore-tag"><span class="user">User</span>: 0</p>
+       
+      </div>
+      
+      </div>
+      
+      <hr>
+      
+      <div class="buttons-div">
+       
+       <button class="buttons" value="✊">✊ <br> 
+       <span class="rock">Rock </span>
+       </button>
+       
+       <button class="buttons" value="✋">✋  <br>
+       <span class="paper">Paper </span>
+       </button>
+       
+       <button class="buttons" value="✌️">✌️ <br>
+       <span class="scissors">Scissors</span>
+       </button> 
+       
+       <br>
+       
+       
+       <button class="clear-scores">🛑  <br>
+       <span class="clearScores">Clear All</span>
+       </button>
+      
+       
+      </div>
+      
+      <hr>
+      
+
+     </div>
+     
+     
+             <!-- Result Page -->
+      
+    <div class="result-div">
+     
+   <div class="content">
+      
+    <h1 class="result-text"></h1>
+    <h2 class="resultText-two"></h2>
+    <p class="score-text"></p>
+    
+    <div class="exit-div">
+     <button class="restart-button">ReStart</button>
+      <button class="exit-game">Exit</button>
+     </div>
+     
+   </div>
+      
+    </div>
+      
+ 
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
