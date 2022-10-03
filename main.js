@@ -64,8 +64,8 @@ if(inputTag.value.match(nameFormat)){
 }
 
 else{
- inputTag.style.borderColor = 'red';
  alert("Invalid: Input doesn't accept numbers and spaces!");
+ inputTag.style.borderColor = 'red';
 }
 
 }
