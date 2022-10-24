@@ -43,7 +43,7 @@ let totalScore = {botScore: 0, playerScore: 0};
 let name = inputTag.value;
 let buttonsClick = 0;
 let numberFormat = /[^\d]/g;
-let nameFormat = /^[A-Za-z]+$/;
+let nameFormat = /^[A-Za-z ]+$/;
 
 
 // Landing Page
@@ -64,7 +64,6 @@ if(inputTag.value.match(nameFormat)){
 }
 
 else{
- alert("Invalid: Input doesn't accept numbers and spaces!");
  inputTag.style.borderColor = 'red';
 }
 
